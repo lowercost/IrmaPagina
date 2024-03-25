@@ -40,6 +40,11 @@ body{
     /*border: 1px solid red;*/
 }
 
+.saludo{
+    font-size: 200%;
+    text-decoration: underline;
+    font-style: italic;
+}
 h1{
     text-transform: uppercase;
     font-size: 10rem;
@@ -263,7 +268,6 @@ h2{
 @media only screen and (max-width: 600px) {
     .titulos {
         flex-direction: column;
-        margin-right: 0;
     }
     
     h1 {
@@ -279,6 +283,7 @@ h2{
     
     .hero {
         flex-direction: column-reverse;
+        height: auto;
     }
 
     .foto {
