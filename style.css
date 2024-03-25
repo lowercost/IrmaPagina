@@ -1,0 +1,394 @@
+:root {
+    --bg-black-900: #f2f2fc;
+    
+}
+
+*{/*    Reseteamos los estilos predeterminados del navegador    */
+    margin: 0;/*Elimina el margen*/
+    padding: 0;/*elimina el relleno*/
+    outline: none;/*elimina el contorno*/
+    text-decoration: none;/*elimina la decoración de texto*/
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bg-black-900);/*Color del fondo*/
+}
+
+.unselectable {
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* estándar */
+}
+
+.seccion{/*estilos para cada sección*/
+    /*height: 100vh;/*altura*/
+    /*border: 1px solid red;*/
+    display: flex;
+
+}
+
+/*  pantalla principal  */
+.titulos{
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid red;*/
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 10rem;
+    margin: 0;/*Elimina el margen*/
+    letter-spacing: 1rem;/*Espacio entre las letras*/
+}
+
+h2{
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 1rem;
+}
+
+.hero{
+    height: 100vh;
+    display: flex;/*usamos flexbox*/
+    flex-direction: row;/*dirección del flex*/
+    justify-content: center;/*centra verticalmente*/
+    align-items: center;/*centra horizontalmente*/
+    font-family: 'Anta', sans-serif;
+    width: 100%;
+    /*border: 1px solid red;*/
+    overflow: hidden;/* Escondemos lo que sale del contenedor*/
+}
+
+.foto{
+    width: 45%;
+    float: center;
+    transform: translateY(.5%);
+    /*border: 1px solid red;*/
+}
+
+
+/*      barra de navegación     */
+.sideBar{
+    display: flex;/*Usamos flexbox*/
+    flex-direction: row;/*direccion de la fila para el flexbox*/
+    position: fixed;/*posicionamiento absoluto*/
+    top: 0px;/*distancia desde la parte inferior*/
+    width: 100%;/*ancho*/
+    height: 70px;/*alto*/
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);/*sombra*/
+    background: #fff;/*fondo*/
+    z-index: 10;
+}
+
+/*.sideBar*/ .btns {
+    display: flex; /* Usa flexbox para el diseño */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    flex: 1; /* Flex-grow de 1 */
+    color: #000; /* Color del texto */
+    letter-spacing: 0.1rem; /* Espaciado entre letras de 0.1rem */
+    transition: all 0.5s ease; /* Transición */
+    font-size: 0.8rem; /* Tamaño de fuente de 0.8rem */
+}
+/*.sideBar*/ .btns:hover {
+    color: white; /* Color del texto al pasar el ratón */
+    background: #FF0000; /* Fondo al pasar el ratón */
+    transition: all 0.5s ease; /* Transición */
+}
+
+
+/* Quienes Somos */
+
+.qss{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /*border: 1px solid blue;*/
+
+}
+
+.txt.qss{
+    display: flex;
+    flex-direction: column;
+}
+
+.txt p{
+    /*border: 1px solid blue;*/
+    font-family: "Roboto Mono";
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2;
+    width: 75%;
+}
+
+.imagen.qss{
+    width: 75%;
+}
+
+.qss img {
+    width: 100%; /* hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: auto; /* hace que la altura se ajuste automáticamente para mantener la proporción */
+    margin: 10px; /* agrega un margen dentro del div */
+}
+
+
+/*      trayectoria     */
+.try {
+    display: inline-block;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.segmento{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    /*border: 1px solid blue;*/
+}
+.segmento p{
+    align-items: center;
+    justify-content: center;
+    /*border: 1px solid red;*/
+    padding: 5%;
+    font-size: 1.3rem;
+}
+.segmento img{
+    width: 25%;
+    height: auto;
+    /*border: 1px solid blueviolet;*/
+}
+
+.segmento.drch img{
+    margin-right: 3%;
+}
+
+.segmento.izq img{
+    margin-left: 3%;
+}
+
+/*      contacto       */
+.contacto{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 100%;
+    /*border: 1px solid blue;*/
+}
+
+.ttlcnt p{
+    text-transform: capitalize;
+    font-size: 2rem;
+    letter-spacing: 0rem;
+    margin-top: 50px;
+}
+
+.cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 75%;
+    width: 100%;
+}
+.carta{
+    display: flex;
+    flex-direction: row;
+}
+
+.carta .cartacontenido{
+    background-color: #fdf9ff;
+    border: 1px solid #e8dfec;
+    border-radius: 30px;
+    margin: 100px;
+    height: 350px;
+    width: 250px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.35 ease;
+}
+
+.carta .cartacontenido:hover{
+    box-shadow: 0 0 20px rgba(253, 85, 85, 0.207);
+}
+
+.carta .cartacontenido .icono{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.carta .cartacontenido .icono .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: red;
+    transition: all 0.3s ease;
+}
+
+.carta .cartacontenido:hover .icono{
+    background: #e8dfec;
+}
+
+.carta .cartacontenido:hover .icono .fa{
+    font-size: 25px;
+    color: #bb0000;
+}
+
+.carta .cartacontenido h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.carta .cartacontenido p{
+    font-size: 16px;
+    color: black;
+    line-height: 25px;
+    }
+
+@media only screen and (max-width: 600px) {
+    .titulos {
+        flex-direction: column;
+        margin-right: 0;
+    }
+    
+    h1 {
+        font-size: 6rem;
+        margin: 0;
+        letter-spacing: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+    }
+    
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .foto {
+        width: 100%;
+    }
+
+    .sideBar {
+        display: none;
+    }
+    /*conoceme*/
+    .qnsSms {
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        border: 1px solid red;
+    }
+    .txt.qss {
+        display: flex;
+        flex-direction: row;
+    }
+    .txt p {
+        font-weight: 150;
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .imagen.qss {
+        width: 100%;
+    }
+    /* trayectoria */
+    .try {
+        margin-top: 30px;
+    }
+    
+    .segmento {
+        flex-direction: column;
+    }
+    
+    .segmento p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+    .segmento img {
+        width: 100%;
+    }
+    .segmento.drch{
+        flex-direction: column;
+    }
+    
+    .segmento.izq{
+        flex-direction: column-reverse;
+    }
+    /* contacto */
+    .contacto {
+        height: auto;
+    }
+    
+    .ttlcnt p {
+        font-size: 2rem;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    .cartas {
+        height: auto;
+    }
+    
+    .carta {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .carta .cartacontenido {
+        border-radius: 20px;
+        margin: 20px;
+        padding: 15px;
+        width: 90%;
+    }
+    
+    .carta .cartacontenido .icono {
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+    }
+    
+    .carta .cartacontenido .icono .fa {
+        font-size: 50px;
+    }
+    
+    .carta .cartacontenido:hover .icono .fa {
+        font-size: 35px;
+    }
+    
+    .carta .cartacontenido h4 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+    
+    .carta .cartacontenido p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+
+
+}
