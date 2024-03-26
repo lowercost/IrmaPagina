@@ -23,10 +23,12 @@ body{
 }
 
 .seccion{/*estilos para cada sección*/
-    /*height: 100vh;/*altura*/
-    /*border: 1px solid red;*/
     display: flex;
 
+}
+.division{
+    width: auto;
+    height: 100px;
 }
 
 /*  pantalla principal  */
@@ -40,11 +42,6 @@ body{
     /*border: 1px solid red;*/
 }
 
-.saludo{
-    font-size: 200%;
-    text-decoration: underline;
-    font-style: italic;
-}
 h1{
     text-transform: uppercase;
     font-size: 10rem;
@@ -122,6 +119,12 @@ h2{
 
 }
 
+.saludo{
+    font-size: 200%;
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .txt.qss{
     display: flex;
     flex-direction: column;
@@ -151,7 +154,13 @@ h2{
 .try {
     display: inline-block;
     justify-content: space-between;
-    margin-top: 50px;
+}
+
+.intr {
+    font-size: 3rem;
+    margin-left: 5%;
+    text-decoration: underline;
+    font-style: italic;
 }
 .segmento{
     display: flex;
@@ -184,23 +193,16 @@ h2{
 .contacto{
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: auto;
     width: 100%;
     /*border: 1px solid blue;*/
-}
-
-.ttlcnt p{
-    text-transform: capitalize;
-    font-size: 2rem;
-    letter-spacing: 0rem;
-    margin-top: 50px;
 }
 
 .cartas{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 75%;
     width: 100%;
 }
@@ -213,8 +215,8 @@ h2{
     background-color: #fdf9ff;
     border: 1px solid #e8dfec;
     border-radius: 30px;
-    margin: 100px;
-    height: 350px;
+    margin: 15px 45px;
+    height: 300px;
     width: 250px;
     padding: 30px 15px;
     text-align: center;
@@ -317,6 +319,10 @@ h2{
     .try {
         margin-top: 30px;
     }
+
+    .intr{
+        font-size: 2.5rem;
+    }
     
     .segmento {
         flex-direction: column;
@@ -340,12 +346,6 @@ h2{
     /* contacto */
     .contacto {
         height: auto;
-    }
-    
-    .ttlcnt p {
-        font-size: 2rem;
-        margin-top: 30px;
-        text-align: center;
     }
     
     .cartas {
@@ -392,7 +392,8 @@ h2{
         line-height: 20px;
     }
 
-
+    /*Barra lateral*/
+    
 
 
 }
