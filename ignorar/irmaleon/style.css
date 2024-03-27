@@ -32,47 +32,64 @@ body{
 }
 
 /*  pantalla principal  */
+
 .titulos{
     margin-top: 0%;
     display: flex;
     flex-direction: column;
-    margin-right: 10%;
     align-items: center;
     justify-content: center;
-    /*border: 1px solid red;*/
+    margin-left: 10px;
+}
+
+.titulos .logo{
+    width: 200px;
+    height: auto;
+}
+
+.logosecundario{
+    width: 25%;
+    height: auto;
 }
 
 h1{
     text-transform: uppercase;
-    font-size: 10rem;
+    font-family: "Montserrat";
+    color: #f2f2fc;
+    font-size: 8rem;
     margin: 0;/*Elimina el margen*/
     letter-spacing: 1rem;/*Espacio entre las letras*/
 }
 
 h2{
-    text-transform: capitalize;
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: "Covered By Your Grace";
+    color: #f2f2fc;
+    font-size: 2.5rem;
     margin: 0;
     letter-spacing: 1rem;
+}
+
+.titulos p{
+    text-transform: uppercase;
+    font-family: "Monserrat";
+    color: #f2f2fc;
+    font-size: 1.5rem;
 }
 
 .hero{
     height: 100vh;
     display: flex;/*usamos flexbox*/
     flex-direction: row;/*dirección del flex*/
-    justify-content: center;/*centra verticalmente*/
+    justify-content: space-around;
     align-items: center;/*centra horizontalmente*/
-    font-family: 'Anta', sans-serif;
-    width: 100%;
-    /*border: 1px solid red;*/
+    width: auto;
     overflow: hidden;/* Escondemos lo que sale del contenedor*/
 }
 
 .foto{
     width: 45%;
-    float: center;
-    transform: translateY(.5%);
-    /*border: 1px solid red;*/
+    margin-top: auto;
 }
 
 
@@ -120,7 +137,8 @@ h2{
 }
 
 .saludo{
-    font-size: 200%;
+    font-family: "Covered By Your Grace";
+    font-size: 2.5rem;
     text-decoration: underline;
     font-style: italic;
 }
@@ -131,12 +149,11 @@ h2{
 }
 
 .txt p{
-    /*border: 1px solid blue;*/
-    font-family: "Roboto Mono";
-    font-weight: 400;
+    font-family: "Montserrat";
     font-size: 1.5rem;
     line-height: 2;
     width: 75%;
+    margin-top: 50px;
 }
 
 .imagen.qss{
@@ -154,13 +171,13 @@ h2{
 .try {
     display: inline-block;
     justify-content: space-between;
+    margin-top: 5%;
 }
 
-.intr {
-    font-size: 3rem;
+.intr p {
+    font-family: "Covered By Your Grace";
+    font-size: 2.5rem;
     margin-left: 5%;
-    text-decoration: underline;
-    font-style: italic;
 }
 .segmento{
     display: flex;
@@ -171,8 +188,8 @@ h2{
 .segmento p{
     align-items: center;
     justify-content: center;
-    /*border: 1px solid red;*/
     padding: 5%;
+    font-family: "Montserrat";
     font-size: 1.3rem;
 }
 .segmento img{
@@ -257,39 +274,77 @@ h2{
     font-size: 18px;
     margin-bottom: 15px;
     color: black;
-    font-weight: 700;
+    font-weight: 300;
     text-transform: capitalize;
+    font-family: "Covered By Your Grace";
 }
 
 .carta .cartacontenido p{
     font-size: 16px;
     color: black;
     line-height: 25px;
+    font-family: "Montserrat";
     }
-
+/* Media Queries para computadoras de escritorio */
+@media only screen and (min-width: 1025px) {
+    .hero{
+        background: rgb(242,242,252);
+        background: linear-gradient(270deg, rgba(242,242,252,1) 25%, rgba(215,55,57,1) 50%);
+    }
+    .logomovil{
+        display: none;
+    }
+}
+    
 @media only screen and (max-width: 600px) {
     .titulos {
         flex-direction: column;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+    }
+    .logo{
+        display: none;
+    }
+    .logosecundario{
+        display: none;
+    }
+    .logomovil{
+        width: 250px;
     }
     
     h1 {
+        color: #000;
         font-size: 6rem;
         margin: 0;
         letter-spacing: 0.5rem;
     }
     
     h2 {
-        font-size: 1.5rem;
+        color: #000;
+        font-size: 3rem;
         letter-spacing: 0.5rem;
     }
+
+    .titulos p{
+        color: #000;
+        font-size: 1.5rem;
+    }
+
+    
     
     .hero {
         flex-direction: column-reverse;
         height: auto;
+        justify-content: center;
+        align-items: center;
+        background: #D73739;
     }
 
     .foto {
         width: 100%;
+        margin-bottom: 0%;
     }
 
     .sideBar {
@@ -298,34 +353,38 @@ h2{
     /*conoceme*/
     .qnsSms {
         flex-direction: column;
-        height: 100vh;
+        height: auto;
         width: 100%;
+        align-items: center;
+        justify-content: center;
     }
     .txt.qss {
         display: flex;
         flex-direction: row;
     }
     .txt p {
-        font-weight: 150;
-        font-size: 1rem;
+        font-size: 1.5rem;
         line-height: 1.5;
         width: 100%;
         padding: 0 20px;
     }
     .imagen.qss {
-        width: 100%;
+        margin-top: -30%;
+        width: 85%;
     }
     /* trayectoria */
     .try {
-        margin-top: 30px;
+        margin-top: -30%;
     }
 
     .intr{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .segmento {
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
     .segmento p {
@@ -334,14 +393,22 @@ h2{
     }
     
     .segmento img {
-        width: 100%;
+        width: 85%;
     }
     .segmento.drch{
         flex-direction: column;
+        padding: 15px 0;
     }
     
     .segmento.izq{
         flex-direction: column-reverse;
+    }
+    .segmento.drch img{
+        margin-right: 0%;
+    }
+    
+    .segmento.izq img{
+        margin-left: 0%;
     }
     /* contacto */
     .contacto {
