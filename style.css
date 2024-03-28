@@ -234,9 +234,11 @@ h2{
     border-radius: 30px;
     margin: 15px 45px;
     height: 300px;
-    width: 250px;
-    padding: 30px 15px;
+    width: 300px;
+    padding: 50px 35px;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     transition: all 0.35 ease;
 }
 
@@ -255,7 +257,7 @@ h2{
 }
 
 .carta .cartacontenido .icono .fa{
-    font-size: 40px;
+    font-size: 60px;
     line-height: 60px;
     color: red;
     transition: all 0.3s ease;
@@ -271,7 +273,7 @@ h2{
 }
 
 .carta .cartacontenido h4{
-    font-size: 18px;
+    font-size: 2rem;
     margin-bottom: 15px;
     color: black;
     font-weight: 300;
@@ -280,11 +282,11 @@ h2{
 }
 
 .carta .cartacontenido p{
-    font-size: 16px;
+    font-size: .8rem;
     color: black;
-    line-height: 25px;
     font-family: "Montserrat";
     }
+
 /* Media Queries para computadoras de escritorio */
 @media only screen and (min-width: 1025px) {
     .hero{
@@ -430,7 +432,8 @@ h2{
         border-radius: 20px;
         margin: 20px;
         padding: 15px;
-        width: 90%;
+        width: 350px;
+        height: auto;
     }
     
     .carta .cartacontenido .icono {
@@ -443,7 +446,7 @@ h2{
     }
     
     .carta .cartacontenido .icono .fa {
-        font-size: 50px;
+        font-size: 75px;
     }
     
     .carta .cartacontenido:hover .icono .fa {
@@ -451,7 +454,7 @@ h2{
     }
     
     .carta .cartacontenido h4 {
-        font-size: 26px;
+        font-size: 2.5rem;
         margin-bottom: 10px;
     }
     
