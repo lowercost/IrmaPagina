@@ -114,7 +114,8 @@ h2{
     color: #000; /* Color del texto */
     letter-spacing: 0.1rem; /* Espaciado entre letras de 0.1rem */
     transition: all 0.5s ease; /* Transición */
-    font-size: 0.8rem; /* Tamaño de fuente de 0.8rem */
+    font-size: 1.5rem; /* Tamaño de fuente de 0.8rem */
+    font-family: "Covered By Your Grace";
 }
 /*.sideBar*/ .btns:hover {
     color: white; /* Color del texto al pasar el ratón */
@@ -140,6 +141,7 @@ h2{
     font-family: "Covered By Your Grace";
     font-size: 2.5rem;
     text-decoration: underline;
+    text-decoration-color: #D73739;
     font-style: italic;
 }
 
@@ -178,6 +180,8 @@ h2{
     font-family: "Covered By Your Grace";
     font-size: 2.5rem;
     margin-left: 5%;
+    text-decoration: underline;
+    text-decoration-color: #D73739;
 }
 .segmento{
     display: flex;
@@ -193,8 +197,9 @@ h2{
     font-size: 1.3rem;
 }
 .segmento img{
-    width: 25%;
-    height: auto;
+    width: auto;
+    height: 35%;
+    object-fit: contain;
     /*border: 1px solid blueviolet;*/
 }
 
@@ -287,6 +292,28 @@ h2{
     font-family: "Montserrat";
     }
 
+/*   Pie de pagina   */
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #D73739;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 5%;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2fc
+}
+
+.footer img{
+    width: 55%;
+    height: auto;
+}
+
 /* Media Queries para computadoras de escritorio */
 @media only screen and (min-width: 1025px) {
     .hero{
@@ -377,7 +404,7 @@ h2{
     }
     /* trayectoria */
     .try {
-        margin-top: -30%;
+        margin-top: -20%;
     }
 
     .intr{
@@ -395,8 +422,10 @@ h2{
         text-align: center;
     }
     
-    .segmento img {
-        width: 85%;
+    .segmento img{
+        width: 75%;
+        height: auto;
+        /*border: 1px solid blueviolet;*/
     }
     .segmento.drch{
         flex-direction: column;
@@ -461,6 +490,16 @@ h2{
     .carta .cartacontenido p {
         font-size: 20px;
         line-height: 20px;
+    }
+
+    /*footer*/
+    .footer{
+        font-size: 1.3rem;
+    }
+    
+    .footer img{
+        width: 100%;
+        height: auto;
     }
 
     /*Barra lateral*/
