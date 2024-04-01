@@ -88,11 +88,9 @@ h2{
 }
 
 .foto{
-    width: 40%;
+    width: 35%;
     margin-top: auto;
 }
-
-
 /*      barra de navegación     */
 .sideBar{
     display: flex;/*Usamos flexbox*/
