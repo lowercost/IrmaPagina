@@ -103,7 +103,7 @@ h2{
     height: 70px;/*alto*/
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);/*sombra*/
     background: #fff;/*fondo*/
-    z-index: 10;
+    z-index: 100;
 }
 
 /*.sideBar*/ .btns {
@@ -323,9 +323,221 @@ h2{
     .logomovil{
         display: none;
     }
+    .btninicio{
+        display: none;
+    }
 }
+
+/*tablet*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .division{
+        display: none;
+    }
+    .btninicio{
+        display: none;
+    }
+    /*  pantalla principal  */
+    .hero{
+        flex-direction: row;
+        background: #D73739;
+        height: 100%;
+        width: auto;
+    }
     
-@media only screen and (max-width: 600px) {
+    .titulos{
+        margin-top: 5%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+        width: auto;
+        height: 500px;
+    }
+    
+    .titulos .logo{
+        width: 200px;
+        height: auto;
+    }
+    
+    .logosecundario{
+        display: none;
+    }
+
+    .logomovil{
+        display: none;
+    }
+    
+    h1{
+        font-size: 6rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+        padding-bottom: 5%;
+    }
+    
+    .titulos p{
+        font-size: 1.5rem;
+    }
+    
+    .foto{
+        width: 50%;
+        margin-top: auto;
+    }
+
+    /*conoceme*/
+    .qnsSms {
+        padding-top: 10%;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid red;
+    }
+    .txt.qss {
+        display: flex;
+        flex-direction: row;
+    }
+    .txt p {
+        font-size: 2rem;
+        line-height: 1.5;
+        width: 100%;
+        height: auto;
+        padding: 10px 25px;
+    }
+    .imagen.qss {
+        width: 85%;
+        height: auto;
+        padding-top: 5%;
+    }
+
+    /*  propuestas  */
+    .try {
+        margin-top: 10%;
+    }
+
+    .intr p{
+        font-size: 5rem;
+    }
+    
+    .segmento {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .segmento p {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .segmento img{
+        width: 75%;
+        height: auto;
+        /*border: 1px solid blueviolet;*/
+    }
+    .segmento.drch{
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    .segmento.izq{
+        flex-direction: column-reverse;
+    }
+    .segmento.drch img{
+        margin-right: 0%;
+    }
+    
+    .segmento.izq img{
+        margin-left: 0%;
+    }
+
+    /* contacto */
+    .contacto {
+        height: auto;
+        padding-top: 10%;
+    }
+    
+    .cartas {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .carta {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 20px 0;
+    }
+    
+    .carta .cartacontenido {
+        border-radius: 20px;
+        margin: 20px;
+        padding: 15px;
+        width: 350px;
+        height: auto;
+    }
+    
+    .carta .cartacontenido .icono {
+        height: 150px;
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 20px;
+    }
+    
+    .carta .cartacontenido .icono .fa {
+        font-size: 75px;
+    }
+    
+    .carta .cartacontenido:hover .icono .fa {
+        font-size: 35px;
+    }
+    
+    .carta .cartacontenido h4 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .carta .cartacontenido p {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    /*footer*/
+    .footer{
+        font-size: 1.3rem;
+    }
+    
+    .footer img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*Movil*/
+@media only screen and (max-width: 767px) {
+    .btninicio{
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        z-index: 10;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: #f2f2fc;
+        border: 1px solid red;
+        opacity: 0.5;
+    }
+    .btninicio .fa{
+        font-size: 60px;
+        color: red;
+    }
     .titulos {
         flex-direction: column;
         width: auto;
@@ -339,9 +551,13 @@ h2{
     .logosecundario{
         display: none;
     }
+    .btnin{
+        display: none;
+    }
     .logomovil{
         width: 35%;
     }
+    
     
     h1 {
         color: #f2f2fc;
@@ -361,33 +577,46 @@ h2{
         font-size: 1.5rem;
     }
 
-    
-    
     .hero {
+        position: relative;
         flex-direction: column-reverse;
         height: auto;
         justify-content: center;
         align-items: center;
         background: #D73739;
         padding-bottom: 25px;
+        z-index: 20;
     }
 
     .foto {
         width: 100%;
-        margin-bottom: -10%;
+        margin-bottom: 0%;
     }
 
     .sideBar {
-        display: none;
+        flex-direction: row;;
+        position: relative;
+        height: auto;
+    }
+
+    .sideBar .btns{
+        letter-spacing: 0rem;
+        font-size: 1.5rem;
+        padding: 3% 2%;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #D73739;
     }
     /*conoceme*/
     .qnsSms {
+        background-color: #f2f2fc;
         flex-direction: column;
         height: auto;
         width: 100%;
         align-items: center;
-        justify-content: center;
-        margin-top: 10%;
+        justify-content: flex-start;
+        margin-top: 0%;
+        padding-top: 5%;
     }
     .txt.qss {
         display: flex;
@@ -404,7 +633,7 @@ h2{
     }
     /* trayectoria */
     .try {
-        margin-top: -20%;
+        margin-top: 0%;
     }
 
     .intr{
